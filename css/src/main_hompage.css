@@ -1,0 +1,114 @@
+/*accordion_width_05.css*/
+
+/*
+           html,body{width: 100%; height: 100%;} 
+           full page 웹 제작시 reset에 이 조건이 기입되있어야 한다.
+           보다 원활한 제작을 위한 팁!
+*/
+
+html,body{width: 100%; height: 100%;}
+
+#wrap      {width: 100%; height: 100%;}
+#headBox   {width:100%; height:8%; background-color:#333;
+            position:fixed; left:0; top:0; z-index:1000; 
+            box-shadow:1rem 1rem 1rem rgba(0,0,0,0.5);}
+#headBox>h1{ box-sizing:border-box;
+color:#fff; text-align:center; padding:0.3rem;font-size:1.2rem;line-height: 50px;transition:all 300ms ease;}
+#headBox h1{ display: block;box-sizing:border-box;
+            color:#fff; text-align:center; padding:0.3rem;font-size:1.2rem;line-height: 50px;transition:all 300ms ease;}
+#headBox h1>a{color:#fff;text-decoration: none;}
+#headBox h1:hover{font-size: 2rem;transition:all 300ms ease;}
+
+.back_index{display: block; width: 50px; height:8%; position: fixed;
+            background-color:inherit; color:#fff;top: 0;left: 0;z-index: 1200;}
+.back_index a{display: block; width: 100%;height: 100%;
+text-decoration: none;}
+.back_index a i{display: block; width: 100%;height: 100%; 
+                color:#fff; line-height: 60px;
+                text-decoration: none;transition:all 300ms ease;
+                font-size: 30px;text-align: center;}
+.back_index a i:hover{font-size: 40px;transition:all 300ms ease;}
+            /*.back_index*/
+#contentBox   {width: 100%;height: 100%;background-color:#ccc;}
+
+ /*h1{width:0; height:0; overflow:hidden;position:absolute; z-index:-1;}*/
+ /*
+           h1의 부모에 relative를 안 주는 이유는
+           h1의 위치를 고정시키고 보이지 않게뒤로 보내려고(-1) 하는 이유 때문임 
+*/
+#gnb       {width:100%; height:100%;}
+  #gnb>ul  {width:100%; height:100%;}
+  #gnb li  {width:33.333333%; height:100%; float:left; position:relative;}
+  #gnb li:nth-child(1){background-image: url(../../img/project_01.jpg);
+                       background-position: center;
+                       background-repeat: no-repeat;
+                       background-size:90vw 100%;
+  }
+  #gnb li:nth-child(2){background-image: url(../../img/project_02.jpg);
+                       background-position: center;
+                       background-repeat: no-repeat;
+                       background-size:110vw 100%;
+  }
+  #gnb li:nth-child(3){background-image: url(../../img/project_03.png);
+                       background-position: center;
+                       background-repeat: no-repeat;
+                       background-size:80vw 100%;
+  }
+  #gnb a   {width:100%; height:100%; text-align:center; line-height:45rem;
+            font-size:2rem; color:#fff; font-weight:bold; text-decoration:none;
+            background-color:rgba(20,20,20,0.4);transition:all 300ms ease;
+            position:absolute; right:0; left:0;}
+  #gnb a:hover{/*background-color:rgba(20,20,20,0);*/
+               color:#f00;text-shadow: 7px 7px 5px #000; font-size:3rem; background-color:inherit;}
+
+/*
+a에 값을 주고싶다면 display:block속성으로 바꿔줘야 한다. 
+왜나면 inline태그인기 때문이다. 
+content안에 text입력 후 줄바꿈을 해야 한다면, 
+
+               content : "text \A text"; withe-space:pre;
+      
+요래요래 작성하면 된다. 
+*/
+
+#gnb a.focus{background-color:inherit;  font-size:3rem; z-index:200; }
+
+/*.focus로 변경 후 jq에서 구동*/
+  #gnb a.focus:after{white-space:pre; color: #333;
+                     display:block; width:100%; height:20%; 
+                     min-height:50px;position:absolute; bottom:0;
+                     background-color:rgba(255,255,255,0.5);
+                     border-radius:; text-align:center;padding-top: 3rem;
+                     line-height:120%; font-size:2rem;font-weight: bold;}
+
+  #gnb li:nth-child(1)>a:hover{left: 0;}
+  #gnb li:nth-child(5)>a:hover{left: -30%;}
+
+#footBox   {width:100%; height:8%; background-color:#333;
+            position:fixed;left:0;bottom:0; z-index:1000; 
+             box-shadow:0 -1rem 1rem rgba(0,0,0,0.5);}
+#footBox h2{ display: block;box-sizing:border-box;
+            color:#fff; text-align:center; padding:0.3rem;font-size:1.2rem;line-height: 50px;transition:all 300ms ease;}
+#footBox h2>a{color:#fff;text-decoration: none;}
+#footBox h2:hover{font-size: 2rem;transition:all 300ms ease;}
+
+.process>a:focus,
+.process>a:active{background-color:inherit;outline: none; }
+/*jq로 보여지게 할 요소 설정*/
+.pro_view{width: 100%; height: 30%; background-color:rgba(0,0,0,0.2);
+          position: fixed;bottom: 0; left: 0;
+          display: none;
+          
+          }
+.pro_view>a{display: block;width: 100%;height: 50px;text-decoration: none;}          
+.pro_view>a>li{width: 100%; height:100%;text-align: center;
+             font-size: 20px; line-height: 50px; 
+             color:#fff; text-decoration: none;}
+.pro_view>a>li:hover{font-size: 25px;
+               background-color:rgba(255,255,255,0.5);
+                    color:#333;font-weight: bold;}
+
+/*
+       width:100%안주면 자동 auto인데 이떄 또한 자동으로 box-sizing:border-box이고, 
+       여기에 float값을 주면 boxsizing이 사라지게 된다. 기억하자.
+*/

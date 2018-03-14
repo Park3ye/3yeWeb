@@ -1,0 +1,42 @@
+/*main_homepage_process_01-1.css*/
+/* 프로젝트1 개썰매스포츠 1차작업인 와이어프레임 작업한 파일 업로드 */
+
+#wrap{width: 100%; min-width: 480px; height: auto; background-color: #333;}
+#headBox{width: 960px; height: auto; margin: 0 auto; background-color: #555;
+         padding-top: 200px; box-sizing: border-box;}
+#headBox ul{width: 100%; height: 100%;}
+#headBox ul li{ width: 100%;height: 1000px; }
+#headBox ul li:nth-child(1){
+  background-image: url(../../img/tumbnail/dog_01.jpg);
+  background-position:top center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#headBox ul li:nth-child(2){
+  background-image: url(../../img/tumbnail/dog_02.jpg);
+  background-position:top center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#headBox ul li:nth-child(3){
+  background-image: url(../../img/tumbnail/dog_03.jpg);
+  background-position:top center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#headBox ul li:nth-child(4){
+  background-image: url(../../img/tumbnail/dog_04.jpg);
+  background-position:top center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#headBox ul li:nth-child(5){
+  background-image: url(../../img/tumbnail/dog_05.jpg);
+  background-position:top center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
