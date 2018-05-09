@@ -26,7 +26,7 @@
  
  
  /* accessibility.css */
- a:focus, button:focus,
+ /*a:focus, button:focus{a,와 button에 포커스시 효과}*/
  input[type="submit"]:focus,
  input[type="reset"]:focus,
  input[type="image"]:focus,
