@@ -12,14 +12,14 @@
 .exit>a:hover{transition:all 300ms ease;
         font-size: 2rem; transition:all 300ms ease;}
 .profile_01{width: 50%;height: 100%;
-  background-image: url(../../img/profile_01.jpg);
-         background-size: 100% 100%;
+  background-image: url(../../img/resume_01.jpg);
+         background-size: 90% 100%;
          background-position: center;
          background-repeat: no-repeat;
 }
 .profile_02{width: 50%;height: 100%;
-  background-image: url(../../img/profile_02.jpg);
-         background-size: 100% 100%;
+  background-image: url(../../img/resume_02.jpg);
+         background-size: 90% 100%;
          background-position: center;
          background-repeat: no-repeat;
 }

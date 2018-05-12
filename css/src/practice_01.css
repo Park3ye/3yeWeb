@@ -1,0 +1,31 @@
+/*연습*/
+
+body {
+  font-family: 'Stardos Stencil', cursive;
+  }
+
+#wrap{ width: 100%;height: 100%; background-color: #09f; }
+#headBox{width: 100%; height: 10%; background-color: #fff;
+         box-shadow: 2px 5px 3px #333;}
+#contentBox{width: 100%;height: 75%; background-color: #fff;
+padding: 1.5% 0; box-sizing: border-box;}
+.view_box{margin: 0 auto;width: 24%; height: 100%; background-color: #999;
+  box-shadow:2px 2px 15px rgba(0,0,0,0.5);
+   background-image: url(../../img/pf_main_01.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   }
+
+.view_box>a{display: block;
+   width: 100%;  height:100%;}
+.view_box>a:hover{background-color:rgba(0,0,0,0.3);}
+#footBox{width: 100%;height: 15%; 
+  background-color: rgba(0,0,0,0.1);}
+
+
+/*headBox안의 a & span에 대한 css*/
+#headBox>a, span{display: block; width: 100%; height: 100%;}
+#headBox a{text-transform: uppercase; text-align: center;
+           font-size: 2rem; color:#333;
+          line-height: 5rem;
+          border-bottom:1px solid #333; box-sizing: border-box;}
